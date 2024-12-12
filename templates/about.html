@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Movie Database</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        nav {
+            background-color: #3498db;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #2980b9;
+        }
+        .data-source {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .data-source a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .data-source a:hover {
+            text-decoration: underline;
+        }
+        .variable-list {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .variable-list li {
+            margin-bottom: 10px;
+        }
+        .variable-list strong {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <h1>About the Movie Database</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/data">Data</a></li>
+        </ul>
+    </nav>
+    <div class="data-source">
+        <h2>Data Source</h2>
+        <p>The data for this project comes from the IMDb Non-Commercial Datasets.</p> 
+        <p>Source: <a href="https://datasets.imdbws.com/" target="_blank">https://datasets.imdbws.com/</a></p>
+    </div>
+    <h2>Variable Definitions</h2>
+    <ul class="variable-list">
+        <li><strong>tconst</strong>: Alphanumeric unique identifier of the title</li>
+        <li><strong>titleType</strong>: The type/format of the title (e.g. movie, short, tvseries, tvepisode, video, etc)</li>
+        <li><strong>primaryTitle</strong>: The more popular title / the title used by the filmmakers on promotional materials at the point of release</li>
+        <li><strong>originalTitle</strong>: Original title, in the original language</li>
+        <li><strong>isAdult</strong>: 0: non-adult title; 1: adult title</li>
+        <li><strong>startYear</strong>: Represents the release year of a title. In the case of TV Series, it is the series start year</li>
+        <li><strong>endYear</strong>: TV Series end year. '\N' for all other title types</li>
+        <li><strong>runtimeMinutes</strong>: Primary runtime of the title, in minutes</li>
+        <li><strong>genres</strong>: Includes up to three genres associated with the title</li>
+    </ul>
+</body>
+</html>
