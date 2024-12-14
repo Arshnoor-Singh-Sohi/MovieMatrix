@@ -124,3 +124,15 @@ flask
 sqlite3
 pandas
 ```
+
+
+## Images
+
+### Main Page
+![Main Page](Images/main_page.png)
+
+### About Page
+![Main Page](Images/about_section.png)
+
+### Data Page
+![Main Page](Images/data_section.png)
